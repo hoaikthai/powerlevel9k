@@ -1346,7 +1346,7 @@ prompt_rspec_stats() {
 ################################################################
 # Segment to display Ruby Version Manager information
 prompt_rvm() {
-  if [ -f Gemfile ] || [ -f *.rb ]; then
+  if [ -f Gemfile ] || [ -f "*.rb" ]; then
     if [ $commands[rvm-prompt] ]; then
       local version_and_gemset=${$(rvm-prompt v p)/ruby-}
 
